@@ -1,0 +1,26 @@
+{
+  "name": "aurora-pay",
+  "version": "1.0.0",
+  "description": "Autonomous AI Treasury Agent built on Tether WDK",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@scure/bip39": "^2.0.1",
+    "@tetherto/wdk": "latest",
+    "@tetherto/wdk-wallet-evm": "latest",
+    "@tetherto/wdk-wallet-solana": "latest",
+    "dotenv": "^16.0.0",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
