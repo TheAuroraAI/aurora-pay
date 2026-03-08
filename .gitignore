@@ -1,6 +1,4 @@
 node_modules/
-dist/
 .env
-*.seed
-PLAN.md
-.env.template
+dist/
+*.js.map

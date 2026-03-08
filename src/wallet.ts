@@ -24,7 +24,7 @@ export async function initWDK(seed: string) {
   const wdk = new WDK(seed)
     .registerWallet('ethereum', WalletManagerEvm, { provider: ETH_RPC })
     .registerWallet('sepolia', WalletManagerEvm, { provider: SEPOLIA_RPC })
-    .registerWallet('solana', WalletManagerSolana, { provider: SOLANA_RPC })
+    .registerWallet('solana', WalletManagerSolana, { rpcUrl: SOLANA_RPC })
 
   return wdk
 }
