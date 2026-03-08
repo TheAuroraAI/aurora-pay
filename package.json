@@ -7,13 +7,18 @@
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
-    "test": "node --experimental-vm-modules node_modules/.bin/jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "mcp": "tsx src/mcp-server.ts",
+    "telegram": "tsx src/telegram-bot.ts",
+    "demo": "tsx src/demo.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
+    "@modelcontextprotocol/sdk": "^1.27.1",
     "@scure/bip39": "^2.0.1",
     "@tetherto/wdk": "latest",
     "@tetherto/wdk-wallet-evm": "latest",
+    "@tetherto/wdk-wallet-evm-erc-4337": "^1.0.0-beta.5",
     "@tetherto/wdk-wallet-solana": "latest",
     "dotenv": "^16.0.0",
     "telegraf": "^4.16.3"
